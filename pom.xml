@@ -71,7 +71,7 @@
                 <version>3.5.5</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>ConferenceAppRegressionSuite.xml</suiteXmlFile>
+                        <suiteXmlFile>CalendarAppRegression.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.24/aspectjweaver-1.9.24.jar"
