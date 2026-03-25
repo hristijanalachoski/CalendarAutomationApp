@@ -20,7 +20,7 @@ public class NewEventScreen {
     @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeNavigationBar[`name == \"New\"`]")
     private RemoteWebElement newEventScreenTitle;
 
-    @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeTextField[`name == \"Ttle\"`]")
+    @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeTextField[`name == \"Title\"`]")
     private RemoteWebElement titleTextField;
 
     public NewEventScreen(IOSDriver driver) {

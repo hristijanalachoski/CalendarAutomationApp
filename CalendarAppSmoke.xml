@@ -4,7 +4,6 @@
     <test verbose="2" name="Calendar Test App">
         <classes>
             <class name="tests.CalendarTest"/>
-            <class name="tests.AnotherTest"/>
         </classes>
     </test>
 </suite>

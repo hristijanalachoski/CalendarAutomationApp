@@ -2,6 +2,15 @@ name: Mobile Test Automation - Calendar App
 
 on:
   workflow_dispatch:
+    inputs:
+      test_suite:
+        description: 'Choose the test suite to run'
+        required: true
+        default: 'CalendarAppRegression'
+        type: choice
+        options:
+          - CalendarAppRegression
+          - CalendarAppSmoke
 
 jobs:
   run-tests:
@@ -12,4 +21,4 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Run tests
-        run: mvn test
+        run: mvn test -DtestSuite=${{ inputs.test_suite }}.xml
